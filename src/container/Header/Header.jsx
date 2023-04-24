@@ -1,0 +1,23 @@
+import { images } from "../../constants";
+import "./Header.css";
+import { SubHeading } from "../../components/index";
+
+const Header = () => (
+  <div className="app__header app__wrapper section__padding" id="home">
+    <div className="app__wrapper_info">
+      <SubHeading title="Find your sweetness" />
+      <h1 className="app__header-h1">Fresh Love</h1>
+      <p className="p__opensans" style={{ margin: "2rem 0" }}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat
+        incidunt eligendi in tempora laboriosam aliquam quam odit? Facilis iure
+        fuga voluptatibus illo qui dolorem magni velit eius omnis ullam
+      </p>
+      <button className="custom__button">Explore Menu</button>
+    </div>
+    <div className="app__wrapper_img">
+      <img src={images.welcome} alt="header img" />
+    </div>
+  </div>
+);
+
+export default Header;
